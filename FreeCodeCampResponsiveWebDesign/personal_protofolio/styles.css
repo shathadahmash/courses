@@ -1,0 +1,111 @@
+/* should have at least one medai query => */
+/* height of the welcome section should be equal to the height of the viewport*/
+/*The navbar should always be at the top of the viewport*/
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#navbar{
+   width: 100%;
+   height: 5rem;
+   background-color: rgb(190,49,68);
+   display: flex;
+   align-items: center;
+   flex-direction: row-reverse;
+   padding-right: 10%;
+   column-gap: 2.5rem;
+   
+}
+
+#navbar a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size:25px;
+    color: white;
+}
+
+#welcome-section{
+    width: 100%;
+    height: 43rem;
+    background-color: rgb(41,42,45);
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; 
+    row-gap: 0px;
+    flex-wrap: wrap;
+}
+
+#welcome-section h1{
+    grid-row: 1;
+    grid-column: 1;
+    margin: 0;
+}
+
+#welcome-section h4{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+
+}
+
+
+#projects{
+    background-color: rgb(69,86,125);
+}
+
+#projects h1{
+    padding-top: 100px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
+    text-underline-offset: 15px;
+}
+
+.grid_container_cards{
+    margin-top: 100px;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    text-align: center;
+    gap: 40px;
+    justify-items: center;
+     grid-template-columns: auto auto auto;
+     grid-template-rows: auto auto ;
+     padding-left: 10%;
+     padding-right: 10%;
+     
+    
+}
+
+.project_card{
+    height: auto;
+    width: auto;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: larger;
+    background-color: rgb(48,56,65);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.project_card img.project_card_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#project_name{
+    color: rgb(255, 255, 255);
+    padding-top:2%;
+    font-weight: 300;
+    font-size: larger;
+}
+
